@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awespme.all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h1><span class="fa fa-sign-in"></span> Register</h1>
+        <!-- LOGIN FORM -->
+          <form action="/register" method="post">
+            <!-- Row for first and last name -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstname">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="firstName"
+                    id="firstName"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lastName"
+                    id="lastname"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Username -->
+            <div class="form-group">
+              <label for="email">Username</label>
+              <input type="text" class="form-control" name="username" id="username" />
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" name="email" id="email" />
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirmpassword">confirm password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-warning btn-lg mt-3">
+              Register
+            </button>
+          </form>
+        </form>
+
+        <hr />
+
+        <p>Already have an account? <a href="/login">Login</a></p>
+        <p>Or go <a href="/">home</a>.</p>
+        
+
+      </div>
+    </div>
+  </body>
+</html>
