@@ -6,7 +6,7 @@ export const getAllBlogs = async ({
   page,
   order,
   orderBy,
-  state,
+  state="published",
   userId,
 }) => {
   const skip = (page - 1) * limit;
